@@ -6,6 +6,6 @@ st.set_page_config(
     layout="centered",       # レイアウト（"centered" または "wide"）
     initial_sidebar_state="collapsed"  # サイドバーの初期状態（"auto", "expanded", "collapsed"）
 )
-
-if st.button("出演数集計アプリ"):
+st.title("トップページ")
+if st.button("出演数集計アプリへ"):
     st.switch_page("pages/name_list_processor.py")
