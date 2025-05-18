@@ -19,7 +19,6 @@ st.title("出演回数集計アプリ")
 # 公式名簿の読み込み（1列すべてに名前があると仮定）
 up_file = st.file_uploader("名簿のExcelファイルをアップロードしてください", type=["xlsx"])
 if up_file:
-    try:
         meibo_df = pd.read_excel(up_file)
         official_names = []
         for col in meibo_df.columns:
@@ -97,5 +96,3 @@ if up_file:
             # データフレームを表示
             st.subheader("補正後の名前ごとの出現回数")
             st.write(result_df)
-    except Exception as e:
-        st.write(f"名簿ファイルの読み込み中にエラーが発生しました: {e}")
