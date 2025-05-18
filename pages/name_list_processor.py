@@ -98,4 +98,4 @@ if up_file:
             st.subheader("補正後の名前ごとの出現回数")
             st.write(result_df)
     except Exception as e:
-        st.error(f"名簿ファイルの読み込み中にエラーが発生しました: {e}")
+        st.write(f"名簿ファイルの読み込み中にエラーが発生しました: {e}")
