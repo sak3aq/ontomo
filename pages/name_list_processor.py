@@ -19,7 +19,6 @@ st.title("出演回数集計アプリ")
 # 公式名簿の読み込み（1列すべてに名前があると仮定）
 up_file = st.file_uploader("名簿のExcelファイルをアップロードしてください", type=["xlsx"])
 if up_file:
-    st.write("Hello")
     meibo_df = pd.read_excel(up_file)
     official_names = []
     for col in meibo_df.columns:
