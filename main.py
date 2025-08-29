@@ -9,3 +9,6 @@ st.set_page_config(
 st.title("トップページ")
 if st.button("出演数集計アプリへ"):
     st.switch_page("pages/name_list_processor.py")
+
+if st.button("シフト管理アプリへ"):
+    st.switch_page("pages/Schedule_Sync.py")
